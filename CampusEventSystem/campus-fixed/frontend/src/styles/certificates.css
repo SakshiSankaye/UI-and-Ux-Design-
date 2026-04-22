@@ -1,0 +1,88 @@
+/* Grid */
+.cert-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+/* Card */
+.cert-card{
+  background:white;
+  border-radius:12px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.cert-card:hover{
+  transform:translateY(-5px);
+}
+
+/* Image */
+.cert-card img{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+}
+
+/* Info */
+.cert-info{
+  padding:12px;
+}
+
+.cert-info h3{
+  margin:0;
+  font-size:16px;
+}
+
+.cert-info .date{
+  color:gray;
+  font-size:12px;
+}
+
+/* Tags */
+.tag{
+  display:inline-block;
+  margin-top:5px;
+  padding:4px 8px;
+  border-radius:6px;
+  font-size:12px;
+}
+
+.tag.Technical{
+  background:#dbeafe;
+  color:#1d4ed8;
+}
+
+.tag.Cultural{
+  background:#fce7f3;
+  color:#be185d;
+}
+
+/* Verified */
+.verified{
+  display:block;
+  margin-top:5px;
+  color:green;
+  font-size:12px;
+}
+
+/* Actions */
+.cert-actions{
+  display:flex;
+  justify-content:space-around;
+  padding:10px;
+  border-top:1px solid #eee;
+}
+
+.cert-actions a{
+  text-decoration:none;
+  font-size:13px;
+  color:#2563eb;
+}
+
+/* Empty */
+.empty-state{
+  text-align:center;
+  color:gray;
+}
